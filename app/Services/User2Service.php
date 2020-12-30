@@ -11,11 +11,14 @@
         * @var string
         */
 
+        public $secret;
+
         public $baseUri;
 
         public function __construct(){
 
             $this->baseUri = config('services.users2.base_uri');
+            $this->secret = config ('services.users2.secret');
 
         } //construct
 
